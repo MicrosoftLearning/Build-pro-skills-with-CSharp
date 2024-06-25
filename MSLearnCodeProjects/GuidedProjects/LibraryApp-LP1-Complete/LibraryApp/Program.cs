@@ -11,7 +11,6 @@ Loan selectedLoanDetails = null!;
 
 JsonData _jsonData = new JsonData();
 
-
 /* 
 
 List<Patron> _patronsStub = new List<Patron> {
@@ -35,7 +34,7 @@ List<Patron> _patronsStub = new List<Patron> {
             }
         }
     }
-};
+    };
 
 */
 
@@ -223,6 +222,7 @@ ConsoleState PatronDetails()
     throw new InvalidOperationException("An input option is not handled.");
 }
 
+
 ConsoleState LoanDetails()
 {
     Console.WriteLine($"Book title: {selectedLoanDetails.BookItem!.Book!.Title}");
@@ -257,7 +257,6 @@ ConsoleState LoanDetails()
 }
 
 
-
 #region Data Access
 
 List<Patron> SearchPatrons(string searchInput)
@@ -279,6 +278,7 @@ List<Patron> SearchPatrons(string searchInput)
     return searchResults;
 }
 
+
 Patron? GetPatron(int id)
 {
     _jsonData.EnsureDataLoaded();
@@ -294,6 +294,7 @@ Patron? GetPatron(int id)
     return null;
 }
 
+
 Loan? GetLoan(int id)
 {
     _jsonData.EnsureDataLoaded();
@@ -308,6 +309,7 @@ Loan? GetLoan(int id)
     }
     return null;
 }
+
 
 Enum ReturnLoan(int id)
 {
@@ -328,7 +330,6 @@ void UpdateLoan(Loan loan)
         }
     }
 
-    existingLoan = GetLoan(loan.Id);
     if (existingLoan != null)
     {
         existingLoan.BookItemId = loan.BookItemId;

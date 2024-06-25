@@ -5,7 +5,6 @@ namespace LibraryApp.ConsoleApp;
 
 public class JsonData
 {
-
     public List<Author>? Authors { get; set; }
     public List<Book>? Books { get; set; }
     public List<BookItem>? BookItems { get; set; }
@@ -36,7 +35,6 @@ public class JsonData
         Loans = LoadJson<List<Loan>>(_loansPath);
     }
 
-
     public void SaveLoans(IEnumerable<Loan> loans)
     {
         List<Loan> loanList = new List<Loan>();
@@ -64,7 +62,6 @@ public class JsonData
             JsonSerializer.Serialize(jsonStream, data);
         }
     }
-
 
     public List<Patron> GetPopulatedPatrons(IEnumerable<Patron> patrons)
     {
@@ -172,7 +169,7 @@ public class JsonData
 
         return populated;
     }
-
+    
     private T? LoadJson<T>(string filePath)
     {
         using (FileStream jsonStream = File.OpenRead(filePath))

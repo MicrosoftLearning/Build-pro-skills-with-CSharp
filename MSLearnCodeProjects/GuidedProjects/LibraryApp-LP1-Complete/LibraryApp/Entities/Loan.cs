@@ -1,5 +1,4 @@
 ﻿namespace LibraryApp.Entities;
-
 public class Loan
 {
     public int Id { get; set; }
@@ -8,5 +7,5 @@ public class Loan
     public DateTime LoanDate { get; set; }
     public DateTime DueDate { get; set; }
     public DateTime? ReturnDate { get; set; }
-    public BookItem BookItem { get; set; }
+    public BookItem? BookItem { get; set; }
 }
