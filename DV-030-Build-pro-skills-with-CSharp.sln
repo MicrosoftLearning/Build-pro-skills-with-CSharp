@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSLearnCodeProjects", "MSLearnCodeProjects", "{26AF65B7-FAF0-4F6A-9A1A-67075CC66C56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GuidedProjects", "GuidedProjects", "{D39598A3-34BD-4409-89EB-7CAFB6B7567C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LibraryApp-LP1-Complete", "LibraryApp-LP1-Complete", "{B36F378A-8103-4F96-B871-75190381BB33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApp", "MSLearnCodeProjects\GuidedProjects\LibraryApp-LP1-Complete\LibraryApp\LibraryApp.csproj", "{B991D1A1-9943-4DE7-9E1F-8252C593AB02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LibraryApp-LP2-Starter", "LibraryApp-LP2-Starter", "{8CE33C66-AD29-4EF4-B424-5EB644EF1A81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApp", "MSLearnCodeProjects\GuidedProjects\LibraryApp-LP2-Starter\LibraryApp\LibraryApp.csproj", "{5E75C8A4-A33F-42EE-ADE9-40415D7F727C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B991D1A1-9943-4DE7-9E1F-8252C593AB02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B991D1A1-9943-4DE7-9E1F-8252C593AB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B991D1A1-9943-4DE7-9E1F-8252C593AB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B991D1A1-9943-4DE7-9E1F-8252C593AB02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E75C8A4-A33F-42EE-ADE9-40415D7F727C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E75C8A4-A33F-42EE-ADE9-40415D7F727C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E75C8A4-A33F-42EE-ADE9-40415D7F727C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E75C8A4-A33F-42EE-ADE9-40415D7F727C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D39598A3-34BD-4409-89EB-7CAFB6B7567C} = {26AF65B7-FAF0-4F6A-9A1A-67075CC66C56}
+		{B36F378A-8103-4F96-B871-75190381BB33} = {D39598A3-34BD-4409-89EB-7CAFB6B7567C}
+		{B991D1A1-9943-4DE7-9E1F-8252C593AB02} = {B36F378A-8103-4F96-B871-75190381BB33}
+		{8CE33C66-AD29-4EF4-B424-5EB644EF1A81} = {D39598A3-34BD-4409-89EB-7CAFB6B7567C}
+		{5E75C8A4-A33F-42EE-ADE9-40415D7F727C} = {8CE33C66-AD29-4EF4-B424-5EB644EF1A81}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {896D27D9-D589-4C8E-A665-746FFF28465C}
+	EndGlobalSection
+EndGlobal

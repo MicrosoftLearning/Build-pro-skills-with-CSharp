@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 1,
+    "Name": "George Orwell"
+  },
+  {
+    "Id": 2,
+    "Name": "Harper Lee"
+  },
+  {
+    "Id": 3,
+    "Name": "Jane Austen"
+  },
+  {
+    "Id": 4,
+    "Name": "F. Scott Fitzgerald"
+  },
+  {
+    "Id": 5,
+    "Name": "J.D. Salinger"
+  },
+  {
+    "Id": 6,
+    "Name": "Virginia Woolf"
+  },
+  {
+    "Id": 7,
+    "Name": "Herman Melville"
+  },
+  {
+    "Id": 8,
+    "Name": "J.R.R. Tolkien"
+  },
+  {
+    "Id": 9,
+    "Name": "J.R.R. Tolkien"
+  },
+  {
+    "Id": 10,
+    "Name": "Homer"
+  },
+  {
+    "Id": 11,
+    "Name": "Fyodor Dostoevsky"
+  },
+  {
+    "Id": 12,
+    "Name": "Fyodor Dostoevsky"
+  },
+  {
+    "Id": 13,
+    "Name": "Gabriel Garcia Marquez"
+  },
+  {
+    "Id": 14,
+    "Name": "Charles Dickens"
+  },
+  {
+    "Id": 15,
+    "Name": "Mark Twain"
+  },
+  {
+    "Id": 16,
+    "Name": "John Steinbeck"
+  },
+  {
+    "Id": 17,
+    "Name": "Oscar Wilde"
+  },
+  {
+    "Id": 18,
+    "Name": "Aldous Huxley"
+  },
+  {
+    "Id": 19,
+    "Name": "Nathaniel Hawthorne"
+  },
+  {
+    "Id": 20,
+    "Name": "Alexandre Dumas"
+  }
+]

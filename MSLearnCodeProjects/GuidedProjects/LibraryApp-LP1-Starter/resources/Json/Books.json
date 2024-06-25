@@ -1,0 +1,162 @@
+[
+  {
+    "Id": 1,
+    "Title": "1984",
+    "AuthorId": 1,
+    "Genre": "Dystopian",
+    "ImageName": "1984.jpg",
+    "ISBN": "978-0451524935"
+  },
+  {
+    "Id": 2,
+    "Title": "To Kill a Mockingbird",
+    "AuthorId": 2,
+    "Genre": "Classic",
+    "ImageName": "mockingbird.jpg",
+    "ISBN": "978-0451524936"
+  },
+  {
+    "Id": 3,
+    "Title": "Pride and Prejudice",
+    "AuthorId": 3,
+    "Genre": "Romance",
+    "ImageName": "Pride and Prejudice.jpg",
+    "ISBN": "978-0451524937"
+  },
+  {
+    "Id": 4,
+    "Title": "The Great Gatsby",
+    "AuthorId": 4,
+    "Genre": "Classic",
+    "ImageName": "The Great Gatsby.jpg",
+    "ISBN": "978-0451524938"
+  },
+  {
+    "Id": 5,
+    "Title": "The Catcher in the Rye",
+    "AuthorId": 5,
+    "Genre": "Coming-of-age",
+    "ImageName": "The Catcher in the Rye.jpg",
+    "ISBN": "978-0451524939"
+  },
+  {
+    "Id": 6,
+    "Title": "To the Lighthouse",
+    "AuthorId": 6,
+    "Genre": "Modernist",
+    "ImageName": "To the Lighthouse.jpg",
+    "ISBN": "978-0451524940"
+  },
+  {
+    "Id": 7,
+    "Title": "Moby-Dick",
+    "AuthorId": 7,
+    "Genre": "Adventure",
+    "ImageName": "Moby-Dick.jpg",
+    "ISBN": "978-0451524941"
+  },
+  {
+    "Id": 8,
+    "Title": "The Lord of the Rings",
+    "AuthorId": 8,
+    "Genre": "Fantasy",
+    "ImageName": "The Lord of the Rings.jpg",
+    "ISBN": "978-0451524942"
+  },
+  {
+    "Id": 9,
+    "Title": "The Hobbit",
+    "AuthorId": 9,
+    "Genre": "Fantasy",
+    "ImageName": "The Hobbit.jpg",
+    "ISBN": "978-0451524943"
+  },
+  {
+    "Id": 10,
+    "Title": "The Odyssey",
+    "AuthorId": 10,
+    "Genre": "Epic",
+    "ImageName": "The Odyssey.jpg",
+    "ISBN": "978-0451524944"
+  },
+  {
+    "Id": 11,
+    "Title": "Crime and Punishment",
+    "AuthorId": 11,
+    "Genre": "Psychological",
+    "ImageName": "Crime and Punishment.jpg",
+    "ISBN": "978-0451524945"
+  },
+  {
+    "Id": 12,
+    "Title": "The Brothers Karamazov",
+    "AuthorId": 12,
+    "Genre": "Psychological",
+    "ImageName": "The Brothers Karamazov.jpg",
+    "ISBN": "978-0451524946"
+  },
+  {
+    "Id": 13,
+    "Title": "One Hundred Years of Solitude",
+    "AuthorId": 13,
+    "Genre": "Magical realism",
+    "ImageName": "One Hundred Years of Solitude.jpg",
+    "ISBN": "978-0451524947"
+  },
+  {
+    "Id": 14,
+    "Title": "The Great Expectations",
+    "AuthorId": 14,
+    "Genre": "Classic",
+    "ImageName": "Great Expectations.jpg",
+    "ISBN": "978-0451524948"
+  },
+  {
+    "Id": 15,
+    "Title": "The Adventures of Huckleberry Finn",
+    "AuthorId": 15,
+    "Genre": "Adventure",
+    "ImageName": "The Adventures of Huckleberry Finn.jpg",
+    "ISBN": "978-0451524949"
+  },
+  {
+    "Id": 16,
+    "Title": "The Grapes of Wrath",
+    "AuthorId": 16,
+    "Genre": "Historical",
+    "ImageName": "The Grapes of Wrath.jpg",
+    "ISBN": "978-0451524950"
+  },
+  {
+    "Id": 17,
+    "Title": "The Picture of Dorian Gray",
+    "AuthorId": 17,
+    "Genre": "Gothic",
+    "ImageName": "The Picture of Dorian Gray.jpg",
+    "ISBN": "978-0451524951"
+  },
+  {
+    "Id": 18,
+    "Title": "Brave New World",
+    "AuthorId": 18,
+    "Genre": "Dystopian",
+    "ImageName": "Brave New World.jpg",
+    "ISBN": "978-0451524952"
+  },
+  {
+    "Id": 19,
+    "Title": "The Scarlet Letter",
+    "AuthorId": 19,
+    "Genre": "Classic",
+    "ImageName": "The Scarlet Letter.jpg",
+    "ISBN": "978-0451524953"
+  },
+  {
+    "Id": 20,
+    "Title": "The Count of Monte Cristo",
+    "AuthorId": 20,
+    "Genre": "Adventure",
+    "ImageName": "The Count of Monte Cristo.jpg",
+    "ISBN": "978-0451524954"
+  }
+]
