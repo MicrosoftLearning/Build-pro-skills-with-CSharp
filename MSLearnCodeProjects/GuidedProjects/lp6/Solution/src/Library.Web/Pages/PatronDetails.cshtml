@@ -1,0 +1,100 @@
+﻿@page
+@model PatronDetailsModel
+@{
+    ViewData["Title"] = "Patron Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <ui-operation-status status="@Model.UiStatus"></ui-operation-status>
+    <div class="row">
+        <div class="col-sm-5">
+            <dl class="row">
+                <dt class="col-sm-4">
+                    Name
+                </dt>
+                <dd class="col-sm-8">
+                    @Model.Patron.Name
+                </dd>
+                <dt class="col-sm-4">
+                    Membership Start
+                </dt>
+                <dd class="col-sm-8">
+                    @Model.Patron.MembershipStart.ToShortDateString()
+                </dd>
+                <dt class="col-sm-4">
+                    Membership End
+                </dt>
+                <dd class="col-sm-8">
+                    @Model.Patron.MembershipEnd.ToShortDateString()
+                </dd>
+            </dl>
+        </div>
+        <div class="col-sm-4">
+            <img src="@Model.PatronImagePath/@Model.Patron.ImageName" 
+                alt="Patron Image" style="max-width: 200px;" />
+        </div>
+        <div class="col-sm-3">
+            <form method="post" asp-page-handler="Renew" asp-route-id="@Model.Patron.Id">
+                <button type="submit" class="btn btn-success">Renew</button>
+            </form>
+        </div>
+    </div>
+    <h3>Book Loans</h3>
+    @foreach (var loan in Model.Patron.Loans!)
+    {
+        <div class="row mb-2">
+            <div class="col-sm-5">
+                <dl class="row">
+                    <dt class="col-sm-4">
+                        Title
+                    </dt>
+                    <dd class="col-sm-8">
+                        @loan.BookItem!.Book!.Title
+                    </dd>
+                    <dt class="col-sm-4">
+                        Author
+                    </dt>
+                    <dd class="col-sm-8">
+                        @loan.BookItem!.Book!.Author!.Name
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm-4">
+                <img src="@Model.BookCoverImagePath/@(loan.BookItem!.Book!.ImageName)" style="max-width: 200px;" />
+            </div>
+            <div class="col-sm-3">
+                <dl class="row">
+                    <dt class="col-sm-4">
+                        Due Date: 
+                    </dt>
+                    <dd class="col-sm-8">
+                        @loan.DueDate.ToShortDateString()
+                    </dd>
+                    @if (loan.ReturnDate != null)
+                    {
+                        <dt class="col-sm-4">
+                            Return Date:
+                        </dt>
+                        <dd class="col-sm-8">
+                            @loan.ReturnDate.Value.ToShortDateString()
+                        </dd>
+                    }
+                </dl>
+                @if (loan.ReturnDate == null)
+                {
+                    <form method="post" asp-page-handler="Return" asp-route-loanId="@loan.Id">
+                        <button type="submit" class="btn btn-primary">Return</button>
+                    </form>
+                    <form method="post" asp-page-handler="Extend" asp-route-loanId="@loan.Id">
+                        <button type="submit" class="btn btn-success ">Extend</button>
+                    </form>
+                }
+            </div>
+        </div>
+    }
+    <div>
+        <a asp-page="./Index">Back to List</a>
+    </div>
+</div>
