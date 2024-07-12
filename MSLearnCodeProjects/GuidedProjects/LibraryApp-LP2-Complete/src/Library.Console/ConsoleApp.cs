@@ -214,14 +214,6 @@ public class ConsoleApp
                 selectedLoanDetails = selectedPatronDetails.Loans.Where(l => l.Id == selectedLoan.Id).Single();
                 return ConsoleState.LoanDetails;
             }
-            else if (action == CommonActions.RenewPatronMembership)
-            {
-                var status = await _patronService.RenewMembership(selectedPatronDetails.Id);
-                Console.WriteLine(EnumHelper.GetDescription(status));
-                // reloading after renewing membership
-                selectedPatronDetails = (await _patronRepository.GetPatron(selectedPatronDetails.Id))!;
-                return ConsoleState.PatronDetails;
-            }
             else
             {
                 Console.WriteLine("Invalid book loan number. Please try again.");
@@ -236,6 +228,15 @@ public class ConsoleApp
         {
             return ConsoleState.PatronSearch;
         }
+        else if (action == CommonActions.RenewPatronMembership)
+        {
+            var status = await _patronService.RenewMembership(selectedPatronDetails.Id);
+            Console.WriteLine(EnumHelper.GetDescription(status));
+            // reloading after renewing membership
+            selectedPatronDetails = (await _patronRepository.GetPatron(selectedPatronDetails.Id))!;
+            return ConsoleState.PatronDetails;
+        }
+
 
         throw new InvalidOperationException("An input option is not handled.");
     }
