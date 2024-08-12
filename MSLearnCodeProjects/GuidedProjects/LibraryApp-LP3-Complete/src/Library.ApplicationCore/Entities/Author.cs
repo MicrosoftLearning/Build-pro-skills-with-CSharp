@@ -1,3 +1,4 @@
+test
 namespace Library.ApplicationCore.Entities;
 public class Author
 {
