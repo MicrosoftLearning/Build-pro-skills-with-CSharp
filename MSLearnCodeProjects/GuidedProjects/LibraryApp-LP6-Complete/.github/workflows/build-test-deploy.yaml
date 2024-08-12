@@ -1,0 +1,45 @@
+name: Build, Test and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.x.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build Solution
+      run: dotnet build --configuration Release
+    - name: Test Solution
+      run: dotnet test --configuration Release --no-build
+
+    - name: Publish Web
+      run: dotnet publish 'src/Library.Web/Library.Web.csproj' --configuration Release --output './Web/publish'
+
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.LIBRARY_SP_CREDS }}
+
+    - name: Build and deploy API to Container App
+      uses: azure/container-apps-deploy-action@v2
+      with:
+        appSourcePath: ${{ github.workspace }}
+        acrName: ${{vars.LIBRARY_ACR_NAME }}
+        containerAppName: ${{ vars.LIBRARY_CONTAINER_APP_NAME }}
+        resourceGroup: ${{ vars.LIBRARY_RESOURCE_GROUP }}
+
+    - name: Deploy Web to Azure Web App
+      uses: azure/webapps-deploy@v3
+      with:
+        app-name: ${{ vars.LIBRARY_APP_NAME }}
+        slot-name: 'production'
+        publish-profile: ${{ secrets.LIBRARY_PUBLISH_PROFILE }}
+        package: './Web/publish'

@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <form method="get">
+        <div class="form-group">
+            <label for="searchInput">Search:</label>
+            <input asp-for="SearchInput" id="searchInput" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+    <div>Found <strong>@Model.PatronsCount</strong> records.</div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Membership Starts</th>
+                <th>Membership Ends</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var patron in Model.Patrons)
+            {
+                <tr>
+                    <td>
+                        <a asp-page="/PatronDetails" asp-route-id="@patron.Id">@patron.Name</a>
+                    </td>
+                    <td>@patron.MembershipStart.ToShortDateString()</td>
+                    <td>@patron.MembershipEnd.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @if (Model.PageCount > 1)
+    {
+        <ul class="pagination">
+            @for (var i = 1; i <= Model.PageCount; i++)
+            {
+                <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                    <a asp-page="/Index" asp-route-PageNumber="@i" asp-route-SearchInput="@Model.SearchInput" class="page-link">@i</a>
+                </li>
+            }
+        </ul>
+    }
+</div>

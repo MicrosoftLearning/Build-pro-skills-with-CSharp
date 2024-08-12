@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Launch (Web)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Library.Web/bin/Debug/net8.0/Library.Web.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/Library.Web",
+      "stopAtEntry": false,
+      "console": "internalConsole",
+      "launchBrowser": {
+        "enabled": true,
+      }
+    }
+  ]
+}
