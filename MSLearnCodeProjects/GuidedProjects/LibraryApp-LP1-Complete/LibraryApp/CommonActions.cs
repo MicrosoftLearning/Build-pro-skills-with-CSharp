@@ -1,4 +1,4 @@
-﻿
+﻿x
 namespace LibraryApp.ConsoleApp;
 
 [Flags]
