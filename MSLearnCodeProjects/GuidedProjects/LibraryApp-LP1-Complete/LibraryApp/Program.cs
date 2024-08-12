@@ -11,8 +11,8 @@ Loan selectedLoanDetails = null!;
 
 JsonData _jsonData = new JsonData();
 
-/* 
 
+/*
 List<Patron> _patronsStub = new List<Patron> {
     new Patron {
         Name = "John Doe",
