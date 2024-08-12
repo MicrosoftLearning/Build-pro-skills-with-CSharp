@@ -1,4 +1,5 @@
-﻿namespace LibraryApp.ConsoleApp;
+﻿
+namespace LibraryApp.ConsoleApp;
 
 [Flags]
 public enum CommonActions
