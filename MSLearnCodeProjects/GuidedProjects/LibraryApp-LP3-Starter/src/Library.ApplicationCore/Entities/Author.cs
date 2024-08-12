@@ -1,4 +1,4 @@
-namespace Library.ApplicationCore.Entities;
+xxnamespace Library.ApplicationCore.Entities;
 public class Author
 {
     public int Id { get; set; }
