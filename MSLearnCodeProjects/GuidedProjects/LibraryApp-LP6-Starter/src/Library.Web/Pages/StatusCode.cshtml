@@ -1,0 +1,8 @@
+@page
+@model StatusCodeModel
+@{
+  ViewData["Title"] = @Model.OriginalStatusCode;
+}
+
+<h1>@Model.OriginalStatusCode</h1>
+<p>Something was wrong with the request. The error code is @Model.OriginalStatusCode</p>
