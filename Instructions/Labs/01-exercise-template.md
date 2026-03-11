@@ -1,11 +1,10 @@
 ---
 lab:
-  title: Exercise Title
-  module: Learn module title
-  description: Before you can start this exercise, you will need to...
-  duration: 72 minutes
-  level: 100
-  islab: true
+  title: Exercise title here
+  module: Learn module title here
+  description: Use this lab template to create labs
+  duration: Specify duration in minutes (for example: 30 minutes)
+  level: Use the 100-500 scale. The practitioner level is 300, so most labs will be assigned a level of 200, 300, or 400.
 ---
 
 <!--
