@@ -1,7 +1,14 @@
 ---
 lab:
-    title: 'Lab: Deploying Azure Resource Manager templates'
-    module: 'Module 1: Exploring Azure Resource Manager'
+  title: 'Lab: Deploying Azure Resource Manager templates'
+  module: 'Module 1: Exploring Azure Resource Manager'
+  description: 'After you complete this lab, you will be able to:'
+  duration: 5 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Resource Manager
 ---
 
 # Lab: Deploying Azure Resource Manager templates
