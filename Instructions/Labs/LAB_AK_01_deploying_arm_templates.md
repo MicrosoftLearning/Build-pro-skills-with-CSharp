@@ -1,15 +1,10 @@
 ---
 lab:
-  title: 'Lab: Deploying Azure Resource Manager templates'
-  type: Answer Key
-  module: 'Module 1: Exploring Azure Resource Manager'
-  description: Maecenas fringilla ac purus non tincidunt. Aenean pellentesque velit id suscipit tempus. Cras at ullamcorper odio.
-  duration: 50 minutes
-  level: 200
-  islab: true
-  primarytopics:
-    - Azure
-    - Azure Resource Manager
+  title: Exercise title here
+  module: Learn module title here
+  description: Use this lab template to create labs
+  duration: Specify duration in minutes (for example: 30 minutes)
+  level: Use the 100-500 scale. The practitioner level is 300, so most labs will be assigned a level of 200, 300, or 400.
 ---
 
 # Lab: Deploying Azure Resource Manager templates
