@@ -1,8 +1,12 @@
 ---
 lab:
-    title: 'Exercise Title'
-    module: 'Learn module title'
+  title: Exercise title here
+  module: Learn module title here
+  description: Use this lab template to create labs
+  duration: Specify duration in minutes (for example: 30 minutes)
+  level: Use the 100-500 scale. The practitioner level is 300, so most labs will be assigned a level of 200, 300, or 400.
 ---
+
 <!--
 Edit the metadata above to manage the list of exercises in the home page of the GitHub site that gets generated.
 You can delete the module and edit index.md in the root of the repo to customize the display so that only the exercises are listed
